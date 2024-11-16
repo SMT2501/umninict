@@ -2,7 +2,7 @@
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.1" id="_x36_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<svg version="1.1" id="_x36_" xmlns="http://www.w3.org/2000svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512"  xml:space="preserve">
 <g>
 	<polygon style="fill:#C0874A;" points="511.401,173.663 502.513,179.269 458.244,207.066 268.606,326.073 266.213,327.652 
@@ -53,4 +53,4 @@
 	<path style="opacity:0.2;fill:#BADB9E;" d="M467.816,16.066v4.273c0-8.887-7.863-16.066-17.605-16.066H62.301
 		c-9.656,0-17.604,7.178-17.604,16.066v-4.273C44.696,7.178,52.645,0,62.301,0h387.911C459.953,0,467.816,7.178,467.816,16.066z"/>
 </g>
-</svg>
+<svg>
