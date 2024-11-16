@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Umnini Community Trust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="d-flex flex-wrap justify-content-center py-5 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="gallery/image.png" height="40" alt="">        
+                <span class="fs-4">Umnini Community Trust</span>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- Events Section -->
+    <section class="events py-5">
+        <div class="container">
+            <h2 class="text-center pb-3 border-bottom">Upcoming Events</h2>
+            <p class="text-center">Stay updated on our latest community events and initiatives.</p>
+            <div class="row row-cols-1 row-cols-lg-3 g-4 py-5">
+                <!-- Event 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Annual Youth Conference</h5>
+                            <p class="card-text">
+                                Join us for an inspiring day of leadership talks and networking opportunities. 
+                                <br><strong>Date:</strong> December 15, 2024<br><strong>Location:</strong> Community Hall
+                            </p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Community Garden Launch</h5>
+                            <p class="card-text">
+                                Be part of a greener future! Help us launch our sustainable food garden project.
+                                <br><strong>Date:</strong> January 10, 2025<br><strong>Location:</strong> Local Park
+                            </p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Volunteer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Scholarship Program Awards</h5>
+                            <p class="card-text">
+                                Celebrate the achievements of our scholarship recipients in a special ceremony.
+                                <br><strong>Date:</strong> February 5, 2025<br><strong>Location:</strong> High School Auditorium
+                            </p>
+                            <a href="#" class="btn btn-outline-info btn-sm">RSVP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <!-- Replace this with a text or logo image if no SVG icons are being loaded for Bootstrap -->
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <img src="/gallery/image.png" width="30" height="24" alt="Logo">
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2022 Umnini Community Trust. All rights reserved.</span>
+            </div>
+    
+            <!-- Social Media Icons Section -->
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <!-- Facebook Icon -->
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#">
+                        <img src="/svg/facebook.svg" alt="Facebook" width="24" height="24">
+                    </a>
+                </li>
+    
+                <!-- Instagram Icon -->
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#">
+                        <img src="/svg/instagram.svg" alt="Instagram" width="24" height="24">
+                    </a>
+                </li>
+    
+                <!-- Twitter Icon -->
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#">
+                        <img src="/svg/twitter.svg" alt="Twitter" width="24" height="24">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#">
+                        <img src="/svg/email.svg" alt="Email" width="24" height="24">
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#">
+                        <img src="/svg/whatsapp.svg" alt="Whatsapp" width="24" height="24">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load the donation modal
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('donate-modal.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.body.insertAdjacentHTML('beforeend', data);
+                })
+                .catch(error => console.error('Error loading donation modal:', error));
+        });
+    </script>
+</body>
+</html>

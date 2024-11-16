@@ -1,0 +1,18 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.about, .news, .gallery, .contact {
+    padding: 2rem;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+}
