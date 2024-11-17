@@ -8,21 +8,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="d-flex flex-wrap justify-content-center py-5 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="gallery/image.png" height="40" alt="">        
-                <span class="fs-4">Umnini Community Trust</span>
+<!-- Responsive Header with Bootstrap Navbar -->
+<div class="container">
+    <header class="py-3 mb-4 border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <img src="gallery/image.png" height="40" alt="">
+                <span class="fs-3 ms-2">Umnini Community Trust</span>
             </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </header>
-    </div>
+            <!-- Toggle button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-info nav-link active" aria-current="page" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+
 
     <!-- Events Section -->
     <section class="events py-5">
